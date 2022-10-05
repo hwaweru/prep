@@ -8,6 +8,9 @@
     <title>Javascript age calculator</title>
   </head>
   <body>
+    <h1>AGE CALCULATOR</h1>
+    <P>What is Akan naming? Are you curious to know your Akan name?</P>
+    <p>Well, you are in the right space. Just input your birth date and gender and voila the answer will be in front of you</p>
     <div class="parent">
       <div class="inp">
         <input type="date" id="input" placeholder="day/month/year" />
@@ -15,23 +18,43 @@
       </div>
       <!--display-->
       <ul>
-        <li><span></span>years</li>
-        <li><span></span>months</li>
-        <li><span></span>days</li>
-        <li><span></span>hours</li>
-        <li><span></span>minutes</li>
-        <li><span></span>seconds</li>
+        <li><span>00</span>years</li>
+        <li><span>00</span>months</li>
+        <li><span>00</span>days</li>
+        <li><span>00</span>hours</li>
+        <li><span>00</span>minutes</li>
+        <li><span>00</span>seconds</li>
   </ul>
     </div>
     <!--javascript-->
     <script type="text/javascript">
-        var datbtn=document.getElementById("button"),
+    var datbtn=document.getElementById("button"),
         datdiv=document.getElementById("div"),
-        thedate=new date(),
-        month=thedate.getmonth(),
+        thedate=new Date(),
+        month=thedate.getMonth(),
+        day=thedate.getDate(),
+        year=thedate.getFullYear(),
+        span=document.querySelectorAll('span');
         
-  
+ function calc() {
+    var date=new Date(),
+    hours=date.getHours(),
+    minutes=date.getMinutes()
+    second=date.getSeconds();
+
+var dat= window.input.value,
+    arr=dat.split('_')
+    arr0=eval(arr[2]),
+    arr1=eval(arr[1]),
+    arr2=eval(arr[0]),
+
+ userday = 30 + day - arr0 
+ usermonth = 12 + month - arr1  
+ useryear = year - 1 - arr2   
     
+
+
+ }
 </script>
 
   </body>

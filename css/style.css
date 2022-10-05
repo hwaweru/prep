@@ -18,3 +18,43 @@ body {background: blue;
     width: 400px;
 
 }
+.parent button{
+    font-size: 20px;
+    padding: 8px;
+    background: white;
+    border: solid 2px white;
+    color: aqua;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.parent ul{
+    display: flex;
+    line-height: none;
+    justify-content: center;
+    margin-top: 90px;
+}
+.parent ul li {
+    width: 120px;
+    height: 150px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+   color: blueviolet;
+
+}
+.parent ul li span{
+    border-radius: 5px;
+    background: burlywood;
+    text-align: center;
+    display: block;
+    color: coral;
+    font-size: 30px;
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+
+}
